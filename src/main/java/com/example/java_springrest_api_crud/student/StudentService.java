@@ -2,12 +2,13 @@ package com.example.java_springrest_api_crud.student;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
 import java.time.Month;
 import java.util.List;
 
-@Component
+@Service
 public class StudentService {
     public List<Student> getStudents() {
         return List.of(
