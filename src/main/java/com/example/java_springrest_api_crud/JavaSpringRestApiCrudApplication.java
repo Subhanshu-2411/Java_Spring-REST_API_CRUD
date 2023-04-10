@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @SpringBootApplication
-@RestController
 public class JavaSpringRestApiCrudApplication {
 
     public static void main(String[] args) {
@@ -20,9 +19,9 @@ public class JavaSpringRestApiCrudApplication {
 //        return "Hello World";
 //    }
 
-    @GetMapping
-    public List<String> hello() {
-        return List.of("Hello", "World");
-    }
+//    @GetMapping
+//    public List<String> hello() {
+//        return List.of("Hello", "World");
+//    }
 
 }
