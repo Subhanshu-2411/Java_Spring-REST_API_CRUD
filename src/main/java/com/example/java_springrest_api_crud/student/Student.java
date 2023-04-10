@@ -9,6 +9,36 @@ public class Student {
     private LocalDate dob;
     private Integer age;
 
+    public Student(
+            Long id,
+            String name,
+            String email,
+            LocalDate dob,
+            Integer age
+    ) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
+        this.dob = dob;
+        this.age = age;
+    }
+
+    public Student(
+            String name,
+            String email,
+            LocalDate dob,
+            Integer age
+    ) {
+        this.name = name;
+        this.email = email;
+        this.dob = dob;
+        this.age = age;
+    }
+
+    public Student() {
+
+    }
+
     public Long getId() {
         return id;
     }
@@ -49,4 +79,14 @@ public class Student {
         this.age = age;
     }
 
+    @Override
+    public String toString() {
+        return "Student{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", dob=" + dob +
+                ", age=" + age +
+                '}';
+    }
 }
