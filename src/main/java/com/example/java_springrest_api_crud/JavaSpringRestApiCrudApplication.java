@@ -11,6 +11,7 @@ import java.time.Month;
 import java.util.List;
 
 @SpringBootApplication
+@RestController
 public class JavaSpringRestApiCrudApplication {
 
     public static void main(String[] args) {
